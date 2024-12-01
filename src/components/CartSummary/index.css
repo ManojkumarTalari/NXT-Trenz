@@ -1,0 +1,94 @@
+/* Write your CSS here */
+.cart-summary-container {
+  border: 1px solid #616e7c; /* Border color from the screenshot */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  width: 100%; /* Full width for mobile screens */
+  max-width: 300px; /* Limit the max width */
+  border-radius: 8px; /* Slight border radius for rounded corners */
+  font-family: 'Roboto', sans-serif; /* Font family */
+  margin: 0 auto; /* Center the container */
+}
+
+.order-total-heading {
+  font-size: 1.2rem; /* Responsive font size */
+  font-weight: 500;
+  color: #171f46; /* Dark color for the text */
+  margin-bottom: 8px;
+ 
+}
+
+.cost {
+  font-size: 1.3rem; /* Larger for emphasis */
+  font-weight: bold;
+  color: #0b69ff; 
+   margin-left: 5px;/* Blue color for the cost */
+}
+
+.cart-count {
+  font-size: 0.9rem; /* Smaller font for item count */
+  color: #616e7c; /* Light gray for the items count */
+  margin-bottom: 16px;
+}
+
+.check-out-btn-container {
+  text-align: center;
+}
+
+.check-out-btn {
+  background-color: #0b69ff; /* Blue button background */
+  color: #ffffff; /* White text */
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Full width for the button */
+  max-width: 100%; /* Ensure the button does not exceed container */
+}
+
+.check-out-btn:hover {
+  background-color: #084b99; /* Darker blue on hover */
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .order-total-heading {
+    font-size: 1.1rem; /* Slightly smaller for tablets */
+  }
+
+  .cost {
+    font-size: 1.4rem; /* Adjust cost font size */
+  }
+
+  .cart-count {
+    font-size: 0.8rem;
+  }
+
+  .check-out-btn {
+    font-size: 0.9rem; /* Adjust button font */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .order-total-heading {
+    font-size: 1rem;
+  }
+
+  .cost {
+    font-size: 1.2rem;
+  }
+
+  .cart-count {
+    font-size: 0.75rem;
+  }
+
+  .check-out-btn {
+    font-size: 0.85rem; /* Smaller font size on mobile */
+    padding: 6px 12px; /* Reduce padding for small screens */
+  }
+}
